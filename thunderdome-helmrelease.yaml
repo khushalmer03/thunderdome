@@ -1,0 +1,21 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: thunderdome-helmrelease
+  namespace: default
+spec:
+  chart:
+    spec:
+      chart: thunderdome-planning-poker
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: thunderdome
+        namespace: flux-system
+  interval: 1m0s
+  values:
+    postgresql:
+      global:
+        storageClass: longhorn
+
