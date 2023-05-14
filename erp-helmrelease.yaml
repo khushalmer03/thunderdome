@@ -13,7 +13,7 @@ spec:
         kind: HelmRepository
         name: erp-helm-source
         namespace: flux-system
-  interval: 10m0s
+  interval: 1m0s
   values:
     image:
       pullPolicy: IfNotPresent
@@ -23,7 +23,7 @@ spec:
       className: traefik
       enabled: true
       hosts:
-      - host: erp.cluster.com
+      - host: erp.cluster.local
         paths:
         - path: /
           pathType: ImplementationSpecific
@@ -33,7 +33,7 @@ spec:
         adminPassword: changeit
         dbType: mariadb
         enabled: true
-        forceCreate: false
+        forceCreate: true
         installApps:
         - erpnext
         - hrms
@@ -45,4 +45,3 @@ spec:
         enabled: true
         size: 8Gi
         storageClass: nfs
-
