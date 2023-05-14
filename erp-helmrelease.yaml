@@ -23,7 +23,7 @@ spec:
       className: traefik
       enabled: true
       hosts:
-      - host: erp.cluster.local
+      - host: erp.cluster.com
         paths:
         - path: /
           pathType: ImplementationSpecific
