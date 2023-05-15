@@ -18,7 +18,7 @@ spec:
     image:
       pullPolicy: IfNotPresent
       repository: khushalmer/myimg
-      tag: develop-e9f5b00-1683786953
+      tag: develop-e9f5b00-1683786953 # {"$imagepolicy": "flux-system:apricotpolicy"}
     ingress:
       className: traefik
       enabled: true
