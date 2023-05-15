@@ -5,5 +5,5 @@ metadata:
   name: apricot
   namespace: flux-system
 spec:
-  image: hub.docker.com/r/khushalmer/myimg
+  image: khushalmer/myimg
   interval: 5m0s
