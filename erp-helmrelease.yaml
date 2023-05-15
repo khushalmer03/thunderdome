@@ -40,11 +40,6 @@ spec:
         - payments
         - apricot
         siteName: erp.cluster.local
-    worker:
-      gunicorn:
-        service:
-          type: NodePort
-          port: 31500
     persistence:
       worker:
         enabled: true
