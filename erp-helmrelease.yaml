@@ -7,13 +7,13 @@ metadata:
 spec:
   chart:
     spec:
-      chart: erpnext
+      chart: frappe/erpnext
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: HelmRepository
         name: erp-helm-source
         namespace: flux-system
-  interval: 1m0s
+  interval: 10m0s
   values:
     image:
       pullPolicy: IfNotPresent
@@ -40,6 +40,10 @@ spec:
         - payments
         - apricot
         siteName: erp.cluster.local
+    nginx:
+      service:
+        port: 32000
+        type: NodePort
     persistence:
       worker:
         enabled: true
