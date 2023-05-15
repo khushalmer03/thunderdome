@@ -2,7 +2,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
-  name: apriupdate
+  name: updateapri
   namespace: flux-system
 spec:
   git:
@@ -11,14 +11,14 @@ spec:
         branch: main
     commit:
       author:
-        email: flux@example.com
+        email: flux@users.noreply.github.com
         name: flux
-      messageTemplate: '{{range .Updated.Images}}{{println .}}{{end}}'
+    push:
+      branch: main
   interval: 1m0s
   sourceRef:
     kind: GitRepository
     name: flux-system
-    namespace: flux-system
   update:
     path: .
     strategy: Setters
