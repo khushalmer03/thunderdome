@@ -1,0 +1,9 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: apricot
+  namespace: flux-system
+spec:
+  image: https://hub.docker.com/r/khushalmer/myimg
+  interval: 5m0s
