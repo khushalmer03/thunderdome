@@ -47,4 +47,3 @@ spec:
         size: 8Gi
         storageClass: longhorn-rwm
 
-
