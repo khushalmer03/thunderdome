@@ -8,4 +8,4 @@ spec:
   image: improwised/apricot3
   interval: 5m0s
   secretRef:
-    name: docker-secret
+    name: regcred
