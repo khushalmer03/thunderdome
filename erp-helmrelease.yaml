@@ -45,4 +45,4 @@ spec:
       worker:
         enabled: true
         size: 8Gi
-        storageClass: longhorn-rwm
+        storageClass: nfs
