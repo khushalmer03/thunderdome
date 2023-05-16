@@ -16,18 +16,18 @@ spec:
   values:
     image:
       pullPolicy: IfNotPresent
-      repository: improwised/apricot3 # {"$imagepolicy": "flux-system:apricotpolicy:name"}
+      repository: khushalmer/myimg # {"$imagepolicy": "flux-system:apricotpolicy:name"}
       tag: develop-07e20aa-1684148367 # {"$imagepolicy": "flux-system:apricotpolicy:tag"}
-    imagePullSecrets: 
+    imagePullSecrets:
       - regcred
     ingress:
       className: traefik
       enabled: true
       hosts:
-      - host: erp.cluster.local
-        paths:
-        - path: /
-          pathType: ImplementationSpecific
+        - host: erp.cluster.local
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
       ingressName: erpnext
     jobs:
       createSite:
@@ -36,10 +36,10 @@ spec:
         enabled: true
         forceCreate: true
         installApps:
-        - erpnext
-        - hrms
-        - payments
-        - apricot
+          - erpnext
+          - hrms
+          - payments
+          - apricot
         siteName: erp.cluster.local
     persistence:
       worker:
