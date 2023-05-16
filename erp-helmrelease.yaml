@@ -18,6 +18,7 @@ spec:
       pullPolicy: IfNotPresent
       repository: improwised/apricot3 # {"$imagepolicy": "flux-system:apricotpolicy:name"}
       tag: develop-07e20aa-1684148367 # {"$imagepolicy": "flux-system:apricotpolicy:tag"}
+    imagePullSecrets: regcred
     ingress:
       className: traefik
       enabled: true
