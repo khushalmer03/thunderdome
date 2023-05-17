@@ -39,6 +39,7 @@ spec:
           - erpnext
           - hrms
           - payments
+          - india_compliance
           - apricot
         siteName: erp.cluster.local
     persistence:
