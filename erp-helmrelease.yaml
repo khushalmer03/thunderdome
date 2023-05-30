@@ -8,6 +8,7 @@ spec:
     spec:
       chart: erpnext
       reconcileStrategy: ChartVersion
+      version: 6.0.33
       sourceRef:
         kind: HelmRepository
         name: erp-helm-source
