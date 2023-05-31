@@ -11,7 +11,7 @@ spec:
         branch: main
     commit:
       author:
-        email: something@gmail.com
+        email: flux@example.com
         name: flux
     push:
       branch: main
