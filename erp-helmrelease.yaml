@@ -51,8 +51,8 @@ spec:
     mariadb:
       global:
         storageClass: longhorn
-      auth: 
-        rootPassword: "bruh"
-        username: "erpnext"
-        password: "bruh"
+      # auth: 
+      #   rootPassword: "bruh"
+      #   username: "erpnext"
+      #   password: "bruh"
 
