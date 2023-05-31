@@ -35,7 +35,7 @@ spec:
         adminPassword: changeit
         dbType: mariadb
         enabled: true
-        forceCreate: true
+        # forceCreate: true
         installApps:
           - erpnext
           - hrms
@@ -55,3 +55,4 @@ spec:
         rootPassword: "bruh"
         username: "erpnext"
         password: "bruh"
+
