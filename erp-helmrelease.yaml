@@ -47,4 +47,11 @@ spec:
       worker:
         enabled: true
         size: 8Gi
-        storageClass: nfs
+        storageClass: longhorn
+    mariadb:
+      global:
+        storageClass: longhorn
+      auth: 
+        rootPassword: "bruh"
+        username: "erpnext"
+        password: "bruh"
