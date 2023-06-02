@@ -18,7 +18,7 @@ spec:
     image:
       pullPolicy: IfNotPresent
       repository: improwised/apricot3 # {"$imagepolicy": "flux-system:apricotpolicy:name"}
-      tag: develop-b8b4c47-1685508287 # {"$imagepolicy": "flux-system:apricotpolicy:tag"}
+      tag: develop-f90aa08-1685703540 # {"$imagepolicy": "flux-system:apricotpolicy:tag"}
     imagePullSecrets:
       - name: regcred
     ingress:
@@ -55,4 +55,3 @@ spec:
         rootPassword: "bruh"
         username: "erpnext"
         password: "bruh"
-
