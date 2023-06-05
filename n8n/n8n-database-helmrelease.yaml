@@ -19,9 +19,10 @@ spec:
       postgresql:
         auth:
           database: n8n
-          postgresPassword: "n8n"
-          username: "n8n"
-          password: "n8n"
+          existingSecret: "postgres-secrets"
+          # postgresPassword: "n8n"
+          # username: "n8n"
+          # password: "n8n"
       storageClass: longhorn
     nameOverride: postgres
     primary:
