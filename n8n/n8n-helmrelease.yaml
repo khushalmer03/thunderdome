@@ -50,8 +50,6 @@ spec:
           targetPort: 5678
         type: ClusterIP
     volumeMounts:
-    - mountPath: /home/node/.n8n
-      name: n8n-volume
     - mountPath: /root/.n8n
       name: n8n-volume
     volumes:
