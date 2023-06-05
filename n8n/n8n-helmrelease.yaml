@@ -21,7 +21,7 @@ spec:
       tag: 0.231.0
     volumeMounts:
     - mountPath: /home/node/.n8n
-      name: n8n-volume
+      name: n8n-storage-claim
     volumes:
     - name: n8n-volume
       persistentVolumeClaim:
