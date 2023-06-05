@@ -2,10 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: n8n-configmap
-  namespace: ttt
-  labels:
-    app: n8n
-    component: configmap
+  namespace: n8n
 data:
   DB_TYPE: "postgresdb"
   DB_POSTGRESDB_DATABASE: "n8n"
