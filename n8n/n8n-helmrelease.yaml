@@ -34,7 +34,7 @@ spec:
           paths:
           - path: /
             pathType: Prefix
-            serviceName: n8n-helmrelease-n8n-main-svc
+            # serviceName: n8n-helmrelease-n8n-main-svc
             servicePort: 80
       name: n8n-main
       ports:
