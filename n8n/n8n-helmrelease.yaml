@@ -49,3 +49,10 @@ spec:
           protocol: TCP
           targetPort: 5678
         type: ClusterIP
+      volumeMounts:
+      - mountPath: /home/node/.n8n
+        name: n8n-volume
+      volumes:
+      - name: n8n-volume
+        persistentVolumeClaim:
+        claimName: n8n-storage-claim
