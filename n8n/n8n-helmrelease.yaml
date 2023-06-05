@@ -51,7 +51,7 @@ spec:
         type: ClusterIP
     volumeMounts:
     - mountPath: /home/node/.n8n
-      name: n8n-storage-claim
+      name: n8n-volume
     volumes:
     - name: n8n-volume
       persistentVolumeClaim:
