@@ -26,7 +26,10 @@ spec:
       - secretRef:
           name: n8n-secrets
       healthcheck:
-        enabled: false
+        enabled: true
+        type: httpGet
+        path: /healthz
+        port: 5678
       ingress:
         enabled: true
         hosts:
