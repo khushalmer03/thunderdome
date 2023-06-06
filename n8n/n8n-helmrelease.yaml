@@ -49,6 +49,10 @@ spec:
           protocol: TCP
           targetPort: 5678
         type: ClusterIP
+      resources:
+        requests:
+          memory: "128Mi"
+          cpu: "100m"
     volumeMounts:
     - mountPath: /root/.n8n
       name: n8n-volume
