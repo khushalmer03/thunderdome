@@ -30,6 +30,42 @@ spec:
             - path: /
               pathType: ImplementationSpecific
       ingressName: erpnext
+    nginx:
+      resources:
+        requests:
+          memory: "25Mi"
+          cpu: "10m"
+    worker:
+      gunicorn:
+        resources:
+          requests:
+            memory: "25Mi"
+            cpu: "10m"
+      default:
+        resources:
+          requests:
+            memory: "25Mi"
+            cpu: "10m"
+      short:
+        resources:
+          requests:
+            memory: "25Mi"
+            cpu: "10m"
+      long:
+        resources:
+          requests:
+            memory: "25Mi"
+            cpu: "10m"
+      scheduler:
+        resources:
+          requests:
+            memory: "25Mi"
+            cpu: "10m"
+    socketio:
+      resources:
+          requests:
+            memory: "25Mi"
+            cpu: "10m"
     jobs:
       createSite:
         adminPassword: changeit

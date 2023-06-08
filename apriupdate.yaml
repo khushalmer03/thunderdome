@@ -14,7 +14,7 @@ spec:
         email: flux@example.com
         name: flux
     push:
-      branch: main
+      branch: flux-erpnext-image-update
   interval: 1m0s
   sourceRef:
     kind: GitRepository

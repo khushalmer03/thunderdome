@@ -1,0 +1,26 @@
+name: Flux erpnext image update
+on:
+  push:
+    branches:
+      - flux-erpnext-image-update
+jobs:
+  createPullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: flux erpnext image update
+          # committer: GitHub <noreply@github.com>
+          # author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          signoff: false
+          branch: flux-erpnext-image-update
+          delete-branch: true
+          labels: |
+            report
+            automated pr
+          milestone: 1
+          draft: false
