@@ -17,7 +17,7 @@ jobs:
           # committer: GitHub <noreply@github.com>
           # author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
-          branch: flux-erpnext-image-update
+          branch: main
           delete-branch: true
           labels: |
             report
