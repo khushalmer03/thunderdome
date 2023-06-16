@@ -18,7 +18,7 @@ spec:
     image:
       pullPolicy: IfNotPresent
       repository: improwised/apricot3 # {"$imagepolicy": "flux-system:apricotpolicy:name"}
-      tag: develop-bbaeb55-1685945281 # {"$imagepolicy": "flux-system:apricotpolicy:tag"}
+      tag: develop-112c5a3-1686719857 # {"$imagepolicy": "flux-system:apricotpolicy:tag"}
     imagePullSecrets:
       - name: regcred
     ingress:
@@ -63,9 +63,9 @@ spec:
             cpu: "10m"
     socketio:
       resources:
-          requests:
-            memory: "25Mi"
-            cpu: "10m"
+        requests:
+          memory: "25Mi"
+          cpu: "10m"
     jobs:
       createSite:
         adminPassword: changeit
