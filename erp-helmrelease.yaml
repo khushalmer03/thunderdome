@@ -18,7 +18,7 @@ spec:
     image:
       pullPolicy: IfNotPresent
       repository: improwised/apricot3 # {"$imagepolicy": "flux-system:apricotpolicy:name"}
-      tag: develop-65fc7e9-1685958112 # {"$imagepolicy": "flux-system:apricotpolicy:tag"}
+      tag: develop-bbaeb55-1685945281 # {"$imagepolicy": "flux-system:apricotpolicy:tag"}
     imagePullSecrets:
       - name: regcred
     ingress:

@@ -11,8 +11,8 @@ spec:
         branch: main
     commit:
       author:
-        email: flux@example.com
-        name: flux
+        email: fluxcdbot@users.noreply.github.com
+        name: fluxcdbot
     push:
       branch: flux-erpnext-image-update
   interval: 1m0s
