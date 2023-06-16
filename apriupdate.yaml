@@ -14,7 +14,7 @@ spec:
         email: fluxcdbot@users.noreply.github.com
         name: fluxcdbot
     push:
-      branch: flux-erpnext-image-update
+      branch: main
   interval: 1m0s
   sourceRef:
     kind: GitRepository
